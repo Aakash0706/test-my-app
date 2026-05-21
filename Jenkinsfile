@@ -19,7 +19,6 @@ pipeline {
             steps {
                 sh 'docker build -t test-my-app .'
                 sh 'docker tag test-my-app jaiswalakash/test-my-app'
-                sh 'docker push jaiswalakash/test-my-app'
             }
         }
         stage('pull and run') {
