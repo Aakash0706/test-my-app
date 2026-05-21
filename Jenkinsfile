@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh 'docker pull jaiswalakash/test-my-app'
 		 sh 'docker rm -f test-my-app || true'
-                sh 'docker run -d -p 9090:80 jaiswalakash/test-my-app'
+                sh 'docker run -d -p 9091:80 jaiswalakash/test-my-app'
             }
         }
     }
