@@ -6,7 +6,8 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                git switch: 'main', git 'https://github.com/Aakash0706/test-my-app.git'
+		sh 'git checkout main'
+                git 'https://github.com/Aakash0706/test-my-app.git'
             }
         }
         stage('Build') {
