@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                git 'https://github.com/Aakash0706/test-my-app.git'
+                git branch: 'main', git 'https://github.com/Aakash0706/test-my-app.git'
             }
         }
         stage('Build') {
