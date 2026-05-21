@@ -24,7 +24,7 @@ pipeline {
         stage('pull and run') {
             steps {
                 sh 'docker pull jaiswalakash/test-my-app'
-                sh 'docker run -d -p 8089:80 jaiswalakash/test-my-app'
+                sh 'docker run -d -p 9090:80 jaiswalakash/test-my-app'
             }
         }
     }
